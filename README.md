@@ -44,7 +44,7 @@ This is a simple REST API for managing books in a library system.
    ## Description: Adds a new book to the library.
 
 ## 2. Borrow a Book
-   Method: PATCH /n
+   Method: PATCH 
    Endpoint: /api/books/borrow/:id
    ### Description: Marks a book as borrowed using its unique ID.
 
