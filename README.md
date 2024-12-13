@@ -34,9 +34,9 @@ This is a simple REST API for managing books in a library system.
 
 # API Endpoints
 ## 1. Add a Book
-   Method: POST
-   Endpoint: /api/books/add
-   Request Body:
+Method: POST
+Endpoint: /api/books/add
+Request Body:
       {
          "title": "Book Title",
           "author": "Author Name"
@@ -44,23 +44,24 @@ This is a simple REST API for managing books in a library system.
    ## Description: Adds a new book to the library.
 
 ## 2. Borrow a Book
-   Method: PATCH 
-   Endpoint: /api/books/borrow/:id
-   ### Description: Marks a book as borrowed using its unique ID.
+Method: PATCH 
+Endpoint: /api/books/borrow/:id
+### Description: Marks a book as borrowed using its unique ID.
 
 ## 3. Return a Book
-   Method: PATCH
-   Endpoint: /api/books/return/:id
-   ### Description: Marks a borrowed book as returned.
+Method: PATCH
+Endpoint: /api/books/return/:id
+  ### Description: Marks a borrowed book as returned.
 
 ## 4. View All Available Books
-   Method: GET
-   Endpoint: /api/books/available
+Method: GET
+Endpoint: /api/books/available
    ### Description: Retrieves a list of all books currently available in the library.
 
    
 # Running Locally
 Ensure MongoDB is set up and the connection string is correct.
+
 Start the server:
 ```bash
 npm run dev
