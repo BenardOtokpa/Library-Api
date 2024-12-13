@@ -34,9 +34,9 @@ This is a simple REST API for managing books in a library system.
 
 # API Endpoints
 ## 1. Add a Book
-Method: POST
-Endpoint: /api/books/add
-Request Body:
+- Method: POST
+- Endpoint: /api/books/add
+- Request Body:
       {
          "title": "Book Title",
           "author": "Author Name"
