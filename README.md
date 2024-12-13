@@ -14,7 +14,7 @@ This is a simple REST API for managing books in a library system.
 - MongoDB (Database)
 
 ## Setup Instructions
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone <repo-url>
    cd library-management-api
@@ -33,25 +33,36 @@ This is a simple REST API for managing books in a library system.
    npm run dev
 
 # API Endpoints
-## Add a Book
-POST /api/books/add
-Body:
-   {
-      "title": "Book Title",
-       "author": "Author Name"
-   }
+## 1. Add a Book
+   Method: POST
+   Endpoint: /api/books/add
+   Request Body:
+      {
+         "title": "Book Title",
+          "author": "Author Name"
+      }
+## Description: Adds a new book to the library.
 
+## 2. Borrow a Book
+   Method: PATCH
+   Endpoint: /api/books/borrow/:id
+   ## Description: Marks a book as borrowed using its unique ID.
 
-## Borrow a Book
-PATCH /api/books/borrow/:id
+## 3. Return a Book
+   Method: PATCH
+   Endpoint: /api/books/return/:id
+   ## Description: Marks a borrowed book as returned.
 
-## Return a Book
-PATCH /api/books/return/:id
+## 4. View All Available Books
+   Method: GET
+   Endpoint: /api/books/available
+   ## Description: Retrieves a list of all books currently available in the library.
 
-## View All Available Books
-GET /api/books/available
-
+   
 # Running Locally
 Ensure MongoDB is set up and the connection string is correct.
-Start the server: npm run dev.
+Start the server:
+```bash
+npm run dev
+
 Use a tool like Postman or cURL to interact with the API.
