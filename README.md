@@ -36,7 +36,6 @@ This is a simple REST API for managing books in a library system.
 ## Add a Book
 POST /api/books/add
 Body:
-   ```bash
    {
       "title": "Book Title",
        "author": "Author Name"
