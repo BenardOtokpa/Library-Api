@@ -25,7 +25,7 @@ This is a simple REST API for managing books in a library system.
    
 3. Create a .env file with the following content:
    ```bash
-   DATABASE=mongodb+srv://benzy:xv1dtcDR5GC3ISZp@cluster0.2xovj.mongodb.net/Library_DB?retryWrites=true&w=majority
+   DATABASE=databaseConectionString
    PORT=3000
 
 4. Start the application:
