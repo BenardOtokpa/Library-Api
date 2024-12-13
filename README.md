@@ -30,7 +30,7 @@ This is a simple REST API for managing books in a library system.
 
 4. Start the application:
    ```bash
-  npm run dev
+   npm run dev
 
 # API Endpoints
 ## Add a Book
