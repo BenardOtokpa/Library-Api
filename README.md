@@ -20,33 +20,38 @@ This is a simple REST API for managing books in a library system.
    cd library-management-api
 
 2. Install dependencies:
+   ```bash
    npm install
    
-3.Create a .env file with the following content:
-DATABASE=mongodb+srv://benzy:xv1dtcDR5GC3ISZp@cluster0.2xovj.mongodb.net/Library_DB?retryWrites=true&w=majority
-PORT=3000
+3. Create a .env file with the following content:
+   ```bash
+   DATABASE=mongodb+srv://benzy:xv1dtcDR5GC3ISZp@cluster0.2xovj.mongodb.net/Library_DB?retryWrites=true&w=majority
+   PORT=3000
 
 4. Start the application:
+   ```bash
   npm run dev
-## API Endpoints
-# Add a Book
+
+# API Endpoints
+## Add a Book
 POST /api/books/add
 Body:
-{
-  "title": "Book Title",
-  "author": "Author Name"
-}
+   ```bash
+   {
+     "title": "Book Title",
+     "author": "Author Name"
+   }
 
-# Borrow a Book
+## Borrow a Book
 PATCH /api/books/borrow/:id
 
-# Return a Book
+## Return a Book
 PATCH /api/books/return/:id
 
-# View All Available Books
+## View All Available Books
 GET /api/books/available
 
-## Running Locally
+# Running Locally
 Ensure MongoDB is set up and the connection string is correct.
 Start the server: npm run dev.
 Use a tool like Postman or cURL to interact with the API.
